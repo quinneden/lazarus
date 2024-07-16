@@ -5,7 +5,9 @@
   outputs,
   config,
   ...
-}: {
+}: let
+  dotdir = "$HOME/.dotfiles";
+in {
   programs.zsh = {
     enable = true;
     enableCompletion = true;

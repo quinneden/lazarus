@@ -37,7 +37,6 @@
     python3
     qalculate-gtk # calculator
     ripgrep # grep replacement
-    soundwireserver # pass audio to android phone
     tdf # cli pdf viewer
     todo # cli todo list
     unzip

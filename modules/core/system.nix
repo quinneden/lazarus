@@ -22,7 +22,7 @@
     overlays = [
       self.overlays.default
       inputs.nur.overlay
-      nixos-apple-silicon.overlays.default
+      inputs.nixos-apple-silicon.overlays.default
     ];
   };
 

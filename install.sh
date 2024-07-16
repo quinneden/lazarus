@@ -63,18 +63,16 @@ set_username() {
 }
 
 get_host() {
-    echo -en "Choose a ${GREEN}host${NORMAL} - [${YELLOW}D${NORMAL}]esktop, [${YELLOW}L${NORMAL}]aptop or [${YELLOW}V${NORMAL}]irtual machine: "
+    echo -en "Choose a ${GREEN}host${NORMAL} - [${YELLOW}M${NORMAL}]acmini or [${YELLOW}V${NORMAL}]irtual machine: "
     read -n 1 -r
     echo
 
-    if [[ $REPLY =~ ^[Dd]$ ]]; then
-        HOST='desktop'
-    elif [[ $REPLY =~ ^[Ll]$ ]]; then
-        HOST='laptop'
-     elif [[ $REPLY =~ ^[Vv]$ ]]; then
+    if [[ $REPLY =~ ^[Mm]$ ]]; then
+        HOST='macmini'
+    elif [[ $REPLY =~ ^[Vv]$ ]]; then
         HOST='vm'
     else
-        echo "Invalid choice. Please select 'D' for desktop, 'L' for laptop or 'V' for virtual machine."
+        echo "Invalid choice. Please select 'M' for macmini or 'V' for virtual machine."
         exit 1
     fi
     

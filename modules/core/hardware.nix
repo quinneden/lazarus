@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  imports = [nixos-apple-silicon.nixosModules.default];
+  imports = [inputs.nixos-apple-silicon.nixosModules.default];
 
   hardware = {
     graphics = {

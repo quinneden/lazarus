@@ -38,7 +38,6 @@
 
   outputs = {
     nixpkgs,
-    nixos-apple-silicon,
     self,
     ...
   } @ inputs: let
@@ -58,6 +57,7 @@
         modules = [(import ./hosts/macmini)];
         specialArgs = {
           host = "macmini";
+          dotdir = "$HOME/.dotfiles";
           inherit self inputs username;
         };
       };
